@@ -1,7 +1,8 @@
 # Gemini CLI
 
-BloodPanel is available to Gemini CLI through its public Streamable HTTP MCP
-endpoint. It needs no BloodPanel account, API key or local server.
+BloodPanel is available to Gemini CLI through its public, catalogue-only
+Streamable HTTP MCP endpoint. It needs no BloodPanel account, API key or local
+server.
 
 ## Install the extension
 
@@ -24,7 +25,7 @@ To add only the remote server to the current project, without installing the
 extension, run:
 
 ```sh
-gemini mcp add --transport http bloodpanel https://bloodpanel.ie/mcp
+gemini mcp add --transport http bloodpanel https://bloodpanel.ie/mcp/catalogue
 ```
 
 Gemini CLI writes project-scoped MCP configuration by default. Add
@@ -36,7 +37,8 @@ Start a new Gemini CLI session and try:
 
 Run `/mcp list` in an interactive session if the tools do not appear. BloodPanel
 uses a public example catalogue. Prices and availability need provider
-confirmation; bookings and purchases are simulations.
+confirmation. The Gemini extension does not expose appointment or purchase
+tools.
 
 The commands and the `httpUrl` manifest field follow the official
 [Gemini CLI MCP](https://geminicli.com/docs/tools/mcp-server/) and
