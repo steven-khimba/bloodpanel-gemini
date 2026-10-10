@@ -1,0 +1,11 @@
+{
+  "name": "bloodpanel-gemini",
+  "version": "1.0.0",
+  "description": "Find and compare Irish blood-test listings with BloodPanel's public remote MCP server.",
+  "mcpServers": {
+    "bloodpanel": {
+      "httpUrl": "https://bloodpanel.ie/mcp"
+    }
+  },
+  "contextFileName": "GEMINI-BLOODPANEL.md"
+}
